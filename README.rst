@@ -9,4 +9,4 @@ Django Layout
     	django-admin.py startproject --template=https://github.com/geros/django-layout-userena/zipball/master --extension=py,rst,gitignore project_name
 
 
-In the template is included as well the `django-userena app <https://github.com/geros/django-userena/>`
+In the template is included as well the `django-userena app <https://github.com/geros/django-userena/>`__
