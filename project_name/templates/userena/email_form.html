@@ -1,0 +1,26 @@
+{% extends 'userena/base_userena.html' %}
+{% load i18n %}
+
+{% block content_title %}
+<ul class="breadcrumb">
+    <li><a href="#">{% blocktrans with profile.user.username as username %}Account</a> <span class="divider">/</span></li>
+    <li><a href="#">{{ username }}{% endblocktrans %}</a> </li>
+</ul>
+{% endblock %}
+
+{% block content %}
+<div class="span3">
+    {% include "userena/nav_settings.html" %}
+</div>
+
+<div class="span9">
+    <form action="" method="post">
+    {% csrf_token %}
+    <fieldset>
+      <legend>{% trans "Change email address" %}</legend>
+      {{ form.as_p }}
+    </fieldset>
+    <input type="submit" class="btn" value="{% trans "Change email" %}" />
+  </form>
+</div>
+{% endblock %}

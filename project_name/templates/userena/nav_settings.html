@@ -1,0 +1,9 @@
+{% load i18n %}
+
+<ul id="box-nav" class="nav nav-tabs nav-stacked">
+    <li><a href="{% url userena_profile_detail user.username %}">{% trans "View profile" %}</a></li>
+    <li><a href="{% url userena_profile_edit user.username %}">{% trans "Edit details" %}</a></li>
+    <li><a href="{% url userena_password_change user.username %}">{% trans "Change password" %}</a></li>
+    <li><a href="{% url userena_email_change user.username %}">{% trans "Change email" %}</a></li>
+    <li><a href="{% url my-bookers %}">{% trans "My Bookers" %}</a></li>
+</ul>
