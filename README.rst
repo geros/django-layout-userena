@@ -4,7 +4,7 @@
 Django Layout
 ===============
 
-``django-layout`` provides sane defaults for new Django projects based on `Django Project Structure <http://www.deploydjango.com/django_project_structure/index.html>`__. To use ``django-layout`` run the following command::
+``django-layout-userena`` provides sane defaults for new Django projects based on `Django Project Structure <http://www.deploydjango.com/django_project_structure/index.html>`__. Twitter Bootsrap is also used. To use ``django-layout-userena`` run the following command::
 
     	django-admin.py startproject --template=https://github.com/geros/django-layout-userena/zipball/master --extension=py,rst,gitignore project_name
 
