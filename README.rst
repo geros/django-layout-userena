@@ -1,4 +1,3 @@
-.. {% comment %}
 
 ===============
 Django Layout
